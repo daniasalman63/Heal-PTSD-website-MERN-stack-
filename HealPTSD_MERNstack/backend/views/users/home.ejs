@@ -1,0 +1,43 @@
+<% include('../layouts/header.ejs') %>
+
+<h1>Welcome,</h1>
+
+<table width="50%">
+    <tr>
+        <td>First Name</td>
+        <td><%= user.firstName %></td>
+    </tr>
+    <tr>
+        <td>Last Name</td>
+        <td><%= user.lastName %></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><%= user.email %></td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td><%= user.mentalHealthHistory %></td>
+    </tr>
+    <tr>
+        <td>Age</td>
+        <td><%= user.age %></td>
+    </tr>
+    <tr>
+        <td>Gender</td>
+        <td><%= user.gender %></td>
+    </tr>
+    <tr>
+        <td>Therapy Status</td>
+        <td><%= user.therapyOption %></td>
+    </tr>
+    <tr>
+        <td>Contact</td>
+        <td><%= user.contact %></td>
+    </tr>
+</table>
+
+<a href="/edit?id=<%= user._id %>">Edit</a>
+<a href="/logout">logout</a>
+
+<% include('../layouts/footer.ejs') %>
